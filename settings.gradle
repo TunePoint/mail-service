@@ -1,0 +1,5 @@
+rootProject.name = 'mail-service'
+
+include 'mail-api'
+include 'mail-model'
+include 'mail-service'

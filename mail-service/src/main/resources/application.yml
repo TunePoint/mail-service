@@ -1,0 +1,14 @@
+mail:
+  sender:
+    address:
+    password:
+  server:
+    host:
+    port:
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8765/eureka
