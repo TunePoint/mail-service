@@ -1,14 +1,17 @@
+spring:
+  application:
+    name: mail-service
 mail:
   sender:
-    address:
-    password:
+    address: ${MAIL_ADDRESS}
+    password: ${MAIL_PASSWORD}
   server:
-    host:
-    port:
+    host: ${MAIL_SERVER_HOST}
+    port: ${MAIL_SERVER_PORT}
 
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8765/eureka
+      defaultZone: ${EUREKA_CLIENT:http://localhost:8765/eureka}

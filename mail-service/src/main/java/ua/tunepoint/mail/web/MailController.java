@@ -2,6 +2,7 @@ package ua.tunepoint.mail.web;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import ua.tunepoint.mail.service.EmailService;
 import ua.tunepoint.mail.service.TemplateService;
 import ua.tunepoint.web.model.StatusResponse;
 
+@Validated
 @RestController
 @RequestMapping("/mail")
 @RequiredArgsConstructor
